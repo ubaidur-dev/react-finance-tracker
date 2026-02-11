@@ -1,0 +1,81 @@
+:root {
+
+    --primary-blue: #003366;
+    --success-green: #10b981; /* Thora modern emerald green */
+    --danger-red: #ef4444;    /* Modern rose red */
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+
+    background-color: #f8fafc;
+    font-family: var(--font-main); /* Default font change kar diya */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased; /* Font ko smooth dikhane ke liye */
+}
+
+.main-card {
+
+    width: 400px;
+    background: white;
+    border-radius: 30px; /* Zyada rounded for modern feel */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-heading {
+
+    padding: 35px 0 15px 0;
+    font-size: 22px;
+    font-weight: 800; /* Extra bold */
+    letter-spacing: -0.5px; /* Modern tight spacing */
+    color: #1e293b;
+}
+
+.balance-display h1 {
+
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1.5px; /* Currency values tight achi lagti hain */
+}
+
+.red-number {
+
+    color: var(--danger-red);
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
+    font-variant-numeric: tabular-nums; /* Numbers ko align rakhne ke liye */
+}
+
+.green-number {
+
+    color: var(--success-green);
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
+    font-variant-numeric: tabular-nums;
+}
+
+
+.section-title {
+
+    margin: 30px 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #64748b; /* Thora light color for professional hierarchy */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input {
+
+    width: 85%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
