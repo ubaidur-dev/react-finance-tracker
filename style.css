@@ -1,3 +1,9 @@
+/* [UI DESIGN & RESPONSIVENESS]
+  * Custom CSS system for financial status cards.
+  * Ensures mobile-friendly layout for all devices.
+*/
+
+
 :root {
 
     --primary-blue: #003366;
@@ -78,4 +84,5 @@ input {
     padding: 14px;
     margin-bottom: 12px;
     border: 1.5px solid #e2e8f0;
+
     border-radius: 12px;
