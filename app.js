@@ -1,3 +1,11 @@
+/*
+ * [CORE LOGIC & DATA MANAGEMENT]
+ * * Uses React state to keep the balance and totals updated in real-time.
+ * * Handles the math for adding income and subtracting expenses.
+ * * Keeps the transaction history organized and easy to track.
+ */
+
+
 const { useState, useEffect } = React;
 
 function BudgetManager() {
@@ -133,4 +141,5 @@ function BudgetManager() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(<BudgetManager />);
