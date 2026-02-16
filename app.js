@@ -1,10 +1,3 @@
-/*
- * [CORE LOGIC & DATA MANAGEMENT]
- * * Uses React state to keep the balance and totals updated in real-time.
- * * Handles the math for adding income and subtracting expenses.
- * * Keeps the transaction history organized and easy to track.
- */
-
 
 const { useState, useEffect } = React;
 
@@ -20,7 +13,7 @@ function BudgetManager() {
     ]);
 
   
-    const totalSpent = expenses.reduce((acc, item) => acc + item.amount, 0);
+   const totalSpent = (expenses || []).reduce((acc, item) => acc + item.amount, 0);
     const remaining = income - totalSpent;
 
 
@@ -56,7 +49,7 @@ function BudgetManager() {
             
             <div className="balance-display">
                 <p className="section-title">Total Income</p>
-                <h1>${income.toLocaleString()}</h1>
+                <h1>{$${income.toLocaleString()}}</h1>
             </div>
 
      
@@ -119,7 +112,7 @@ function BudgetManager() {
             </form>
 
             <div className="section-title">Transaction History</div>
-            <div style={{ maxHeight: '200px', overflowY: 'auto', padding: '0 20px' }}>
+            <div style={{ maxHeight: '200px', overflowY: 'auto', padding: '0 20px', scrollbarWidth: 'none' }}>
                 {expenses.map(exp => (
                     <div key={exp.id} style={{ 
                         display: 'flex', justifyContent: 'space-between', 
@@ -143,3 +136,4 @@ function BudgetManager() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<BudgetManager />);
+
