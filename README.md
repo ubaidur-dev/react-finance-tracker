@@ -1,4 +1,4 @@
-# react-finance-tracker 💰
+# React finance tracker 
 A simple but powerful personal finance dashboard. I built this to practice clean state management in React and to create a UI that actually feels premium. It tracks income, deducts expenses in real-time, and keeps a clean history of where your money is going.
 
 ### Key Features:
@@ -13,4 +13,5 @@ A simple but powerful personal finance dashboard. I built this to practice clean
 * **Icons:** FontAwesome for a professional look.
 
 ### How to Run:
-Since I used the CDN approach for this version, you don't need any complex setup. Just download the files and open `index.html` in your browser to see it in action.
+* Since I used the CDN approach for this version, you don't need any complex setup.
+* Just download the files and open **`index.html`** in your browser to see it in action.
